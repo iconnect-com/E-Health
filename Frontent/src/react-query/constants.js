@@ -1,0 +1,16 @@
+export const queryKeys = {
+  user: 'user',
+  me: 'me',
+  patient: 'patient',
+  doctor: 'doctor',
+  admin: 'admin',
+  appointment: 'appointment',
+  consultation: 'consultation',
+  pharmacy: 'pharmacy',
+  users: 'users',
+  appointtype: 'appointmenttype',
+  drugs: 'drugs',
+  report: 'report',
+  order: 'order',
+  doclist: 'doclist',
+};

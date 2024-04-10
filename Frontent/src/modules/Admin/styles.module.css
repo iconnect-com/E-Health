@@ -1,0 +1,123 @@
+.testCreatorContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.testCreatorContainer .leftSection {
+  flex: 0.35;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.buttonContainer {
+  display: flex;
+
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.showSampleButton {
+  border: none;
+  background: rgba(30, 158, 136, 0.1);
+  cursor: pointer;
+  border-radius: 20px;
+  margin-right: 20px;
+  padding: 0.8rem 1.2rem;
+}
+
+.sampleList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.sampleButton {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  background-color: whitesmoke;
+  margin-top: 10px;
+  width: 60%;
+}
+
+.testCreatorContainer .rightSection {
+  flex: 1;
+  padding-left: 4%;
+  border-left: 1px solid #ccc;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
+
+.rightSection .inputContainer {
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.rightSection label {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.rightSection .inputContainer input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.26);
+  border-radius: 4px;
+}
+
+.sampleButtons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sampleButtons button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(30, 158, 136, 0.1);
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background-color: rgba(30, 158, 136, 1);
+  color: #fff;
+  padding: 16px 34px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sampleButtons button span {
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  .testCreatorContainer {
+    flex-direction: column;
+  }
+  .inputContainer {
+    width: 100%;
+  }
+
+  .testCreatorContainer .rightSection {
+    border: none;
+  }
+
+  .rightSection .inputContainer {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .testCreatorContainer .leftSection {
+    border: none;
+  }
+}

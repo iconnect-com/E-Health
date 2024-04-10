@@ -1,0 +1,102 @@
+.homepage {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: url('../../assets/LandingPa.jpeg');
+  background-size: 110% auto; /* Adjusted background-size */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.home {
+  height: 150vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  padding: 3% 2%;
+  margin: 0;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  .home {
+    height: 85vh;
+  }
+  .home main {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 708px) {
+  .home {
+    min-height: 60vh;
+  }
+  .home main .title h1 {
+    font-size: 4rem;
+  }
+  .home .homeNav {
+    width: 94%;
+  }
+
+  .home .homeNav .logo {
+    width: 70px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .home .homeNav {
+    margin-top: 30px;
+    width: 94%;
+  }
+  .home .homeNav .admin a {
+    font-size: 1rem;
+  }
+  .home main .btnWrapper .registerLink {
+    font-size: 0.8rem;
+  }
+  .home main {
+    gap: 3rem;
+  }
+
+  .home main .title h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .home {
+    height: 100vh;
+    background: url('../../assets/LandingPage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: slideBg 20s ease-in-out infinite 8s;
+    animation-timing-function: ease-in-out;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 3% 2%;
+    margin: 0;
+    overflow: hidden;
+  }
+  .home .homeNav {
+    height: 4vh;
+    padding: 2% 1%;
+    margin-top: 20px;
+    width: 24%;
+  }
+  .home main {
+    margin-top: 10px;
+  }
+  .home main .title h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+
+  .home main .title p {
+    width: 100%;
+  }
+}

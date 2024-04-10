@@ -1,0 +1,10 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/bdb4821f-aeb2-4a66-bdc4-772bf8a92f80/resourceGroups/CsharpTeam/providers/Microsoft.Web/sites/VirtualConsultation-fe",
+    "appService.deploySubpath": ".",
+    "azureFunctions.deploySubpath": "src\\modules\\ACS Teams Function",
+    "azureFunctions.postDeployTask": "npm install (functions)",
+    "azureFunctions.projectLanguage": "TypeScript",
+    "azureFunctions.projectRuntime": "~3",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.preDeployTask": "npm prune (functions)"
+}

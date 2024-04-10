@@ -1,0 +1,217 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+
+  /* font size */
+  --fs-h1: 4rem4
+  --fs-h2: 2.5rem;
+  --fs-h3: 2rem;
+  --fs-h4: 1.5rem;
+  --fs-body1: 1.25rem;
+  --fs-body2: 1rem;
+
+  /* colors */
+  --white: #ffffff;
+  --bg-white: #f5f5f5;
+  --text-main: #282828;
+  --link: #4f6bfe;
+  --bg-btn: #1a89c2;
+  --error: #b00020;
+  --loading: #808080;
+}
+
+body {
+  color: var(--text-main);
+  font-size: calc(var(--fs-body1) / 2);
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.admin_container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+}
+
+.navigation {
+  display: flex;
+  width: 15%;
+}
+
+.header_container {
+  display: flex;
+  flex-direction: column;
+  width: 84%;
+  margin: 1%;
+}
+
+.appContainer {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-around;
+}
+
+.contentsRight {
+  width: 100%;
+  flex-grow: 1;
+  overflow-y: scroll;
+  /* display: flex; */
+  /* flex-direction: column; */
+  flex: 0.87;
+  padding: 4.5rem 2rem;
+  height: 100vh;
+  background: var(--black);
+  justify-content: space-between;
+}
+
+.pageContents {
+  display: flex;
+  flex-direction: column;
+  width: 110%;
+  /* min-height: 50vh; */
+}
+
+.cardFlex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.chart {
+  width: 100%;
+  display: flex;
+}
+
+.chartItems {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chartContainer {
+  width: 100%;
+  display: flex;
+  flex: 0.7;
+}
+
+.activityContainer {
+  display: flex;
+  flex: 0.3;
+  flex-direction: column;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #d5d7da;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 4px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button.active {
+  background-color: rgba(30, 158, 136, 1);
+}
+
+.topMargin {
+  margin-left: "30px";
+  box-shadow: none;
+  margin-top: 5%;
+}
+.buttonsall {
+  /* margin-top: 5%; */
+  margin-left: 20px;
+  background-color: rgba(30, 158, 136, 1);
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.buttonsall:hover {
+  background-color: rgba(61, 185, 164, 1);
+}
+
+@media screen and (max-width: 1050px) {
+}
+
+@media screen and (max-width: 700px) {
+  .appContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: flex-start;
+  }
+  .contentsRight {
+    padding: 1rem;
+  }
+  .buttonsall {
+    margin-left: -140px;
+    margin-top: 30px;
+    background-color: rgb(93, 140, 132);
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    align-items: end;
+    font-size: 12px;
+  }
+  .contentsRight {
+    padding: 1rem;
+  }
+  .admin_container {
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    overflow: scroll;
+  }
+  .pageContents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header_container {
+    flex-direction: column;
+  }
+
+  .navigation {
+    width: 100%;
+  }
+
+  .header_container {
+    width: 100%;
+  }
+
+  .cardFlex {
+    margin-top: 20px;
+  }
+}
